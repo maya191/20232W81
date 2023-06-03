@@ -1,0 +1,272 @@
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #ebe4e4 !important;
+  position: relative;
+  padding: 0 15px;
+  display: block;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+/*  color: #fff;*/
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000 !important;
+/*  color: ##333131;*/
+}
+
+/*.nav > .nav-links > a:hover {
+  color: yellow;
+}*/
+
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+/*    background-color: rgba(0, 0, 0, 0.3);*/
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(206, 170, 233);
+  }
+  .nav > .nav-links {
+/*    position: absolute;*/
+    display: block;
+    width: 100%;
+    background-color: #f7f5f5;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+input[type="text"]{
+  font-size:16px;
+}
+input[type="radio"]{
+  font-size:16px;
+}
+input[type="checkbox"]{
+  font-size:16px;
+}
+input[type="email"]{
+  font-size:16px;
+}
+input[type="select"]{
+  font-size:16px;
+}
+
+
+/* Footer  */
+footer {
+  background: #e2e0e0;
+  padding: 2rem;
+  color: #040404;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.footer-content .title h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+
+}
+
+.footer-content .title {
+  text-align: center;
+  color: #000;
+  padding-bottom: 1.5rem;
+}
+
+.footer-content .footerDog {
+  font-size: 20px;
+  color: #000;
+
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.socials a {
+  text-decoration: none;
+  color: #050505;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 2.6rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: rgb(93, 15, 182);
+}
+
+.footer-bottom {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  padding: 0 12px;
+}
+
+.footer-bottom p a {
+  color: #7124ec;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-right: 7%;
+
+}
+
+.footer-menu ul {
+  display: flex;
+}
+
+.footer-menu ul li {
+  display: block;
+  font-size: 20px;
+  font-family: var(--main-text-font);
+  padding: 0 0.5rem;
+}
+
+.footer-menu ul li a {
+  color: #858687;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #7227da;
+}
+
+@media (max-width: 830px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:500px) {
+  .footer-content .title h3 {
+    font-size: 30px;
+  }
+
+  .socials a i {
+    font-size: 20px;
+  }
+
+  .footer-menu ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer-bottom p a {
+    font-size: 12px;
+  }
+}
+
+
+body{
+  background-color: #fafafa !important;
+}
+
+fieldset{
+  border: 0.15rem solid rgb(206, 170, 233);
+  border-radius: 1.875rem;
+  font-family: var(--main-text-font);
+  /* width: 10rem; */
+  /* height: 3.5rem; */
+  color: #454545;
+  font-weight: 300;
+  box-shadow: 0px 5px 10px rgba(74, 68, 78, 0.1);
+  margin-top: 30px;
+  padding-left: 16px;
+}
+fieldset legend {
+  padding-left:3px;
+}

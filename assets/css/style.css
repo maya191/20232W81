@@ -1,0 +1,170 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+main{
+    min-height: 50vh;
+}
+
+
+
+/* breweries styles */
+.breweries {
+  padding: 2rem;
+}
+
+.breweries > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.breweries > div > div > figure {
+    border: 1px solid red;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.breweries > div > div > figure > img {
+  width: 100%;
+}
+
+
+.breweries > div > div > figcaption {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.breweries > div > div > figcaption > h3 {
+  padding: 0rem;
+  font-size: 1.25rem;
+}
+
+.breweries > div > div > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.breweries > div > div > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.btn{
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  width: 9rem;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(210, 161, 255);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.float-right{
+  float: right;
+}
+
+.desc-box {
+  background-color: #0ea1a1;
+  color: white;
+  display: flex;
+  padding: 14.375rem 1rem 6.8125rem;
+}
+.desc-box > div{
+  padding: 0 2rem;
+}
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.maps-button {
+  background: #000000;
+  color: #ffffff;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.rating-button{
+  color: orange;
+}
+
+.sticky-position{
+  position: sticky
+}
+
+
+input[type=email] {
+    font-size: max(1em, 16px);
+}
+
+input[type=text] {
+    font-size: max(1em, 16px);
+}
+input[type=textarea] {
+    font-size: max(1em, 16px);
+}
+
+
+@media(max-width: 578px){
+  .hero {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+  }
+
+  .breweries > div {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media(max-width: 420px){
+  .hero {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+  }
+
+  .breweries > div {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+.form-group{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.form-input{
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.content-center{
+  display: flex;
+  justify-content: center;
+}
+
+#contactForm{
+  max-width: 576px;
+}

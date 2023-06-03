@@ -1,0 +1,58 @@
+input[type=file] {
+                    /* Hide the default file input button */
+                    display: none;
+                  }
+
+                  .file-label {
+                    /* Style the label as desired */
+                    display: inline-block;
+                    padding: 8px 12px;
+/*                    background-color: #f1f1f1;*/
+/*                    color: #333;*/
+/*                    border: 1px solid #ccc;*/
+/*                    border-radius: 4px;*/
+                    cursor: pointer;
+                  }
+
+                  .file-label::after {
+                    /* Add custom text for the "Choose File" tagline */
+                    content: "Choose File";
+                  }
+
+                  /* Reposition the tagline if needed */
+                  .file-label::after {
+                    margin-left: 10px; /* Adjust the value to your preference */
+                  }
+
+                  .file-label:after {
+                    /* Add custom text for the "Choose File" tagline */
+                    content: attr(data-file-placeholder);
+                  }
+
+                  .file-label[data-file-selected='false']:after {
+                    /* Hide the label after a file has been selected */
+                    display: none;
+                  }
+
+/*.file-label {
+                    display: inline-block;
+                    padding: 8px 12px;
+                    background-color: #f1f1f1;
+                    color: #333;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    cursor: pointer;
+                  }*/
+
+                  .file-name {
+                    display: none;
+                    margin-left: 10px;
+                  }
+
+                  .file-label.file-selected .choose-file {
+                    display: none;
+                  }
+
+                  .file-label.file-selected .file-name {
+                    display: inline;
+                  }

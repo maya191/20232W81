@@ -1,0 +1,90 @@
+@media screen and (max-width: 1500px){
+        .venue-container .venue-button {
+            grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 1400px){
+        .venue-container .venue-button {
+            grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 1300px){
+        .venue-container .venue-button {
+            grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 992px){
+        .venue-container .venue-button {
+            grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 600px){
+        .venue-container .venue-button {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .venue-container .venue-button button {
+          border: none;
+          padding: 6px 8px;
+          width: 100%;
+          cursor: pointer;
+          border-radius: 10px;
+          border: 0.0625rem solid rgb(210, 161, 255);
+          background-color: rgb(210, 161, 255);
+          border-radius: 1.875rem;
+          font-family: var(--main-text-font);
+          color: #ffffff;
+          font-size: 1.155rem;
+          font-weight: 300;
+          margin-top: 1.5rem;
+        }
+      }
+      
+      .venue-section .popup-content {
+          height: auto;
+      }
+      
+      fieldset{
+          box-shadow: none;
+          
+      }
+
+      @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+/*          fieldset, label { margin: 0; padding: 0; }*/
+          
+          .rating { 
+            border: none;
+            float: left;
+          }
+
+          .rating > input { display: none; } 
+          .rating > label:before { 
+            margin: 5px;
+            font-size: 1.25em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005";
+          }
+
+          .rating > .half:before { 
+            content: "\f089";
+            position: absolute;
+          }
+
+          .rating > label { 
+            color: #ddd; 
+           float: right; 
+          }
+
+          /***** CSS Magic to Highlight Stars on Hover *****/
+
+          .rating > input:checked ~ label, /* show gold star when clicked */
+          .rating:not(:checked) > label:hover, /* hover current star */
+          .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+          .rating > input:checked + label:hover, /* hover current star when changing rating */
+          .rating > input:checked ~ label:hover,
+          .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+          .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 

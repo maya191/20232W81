@@ -1,0 +1,36 @@
+#map {
+        height: 400px;
+        width: 100%;
+      }
+
+      .blue-card .right-hand {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+      .main2-btn {
+            display: none; /* Hide the radio input */
+          }
+
+          .main2-btn + label {
+              display: inline-block;
+              padding: 10px 20px;
+              background-color: gray;
+              color: white;
+              cursor: pointer;
+              border: 0.0625rem solid rgb(210, 161, 255);
+              background-color: rgb(210, 161, 255);
+              border-radius: 1.875rem;
+              font-family: var(--main-text-font);
+              width: 13.125rem;
+              height: 3.5rem;
+              cursor: pointer;
+              color: #ffffff;
+              font-size: 1.5rem;
+              font-weight: 300;
+              margin-top: 1.5rem;
+          }
+
+          .main2-btn:checked + label {
+            background-color: black;
+          }

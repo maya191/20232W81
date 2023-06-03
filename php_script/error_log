@@ -1,0 +1,1 @@
+[23-May-2023 10:54:40 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mudaixmr/dogfriendly.mudassarsteelfence.com/php_script/get-routes.php on line 18
